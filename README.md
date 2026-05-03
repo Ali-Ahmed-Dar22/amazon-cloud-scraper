@@ -1,8 +1,8 @@
-# 🛒 Amazon E-Commerce Cloud Scraper
+#  Amazon E-Commerce Cloud Scraper
 
 A robust, 24/7 automated web scraper built with Python, specifically designed to bypass advanced anti-bot mechanisms and monitor Amazon product prices in real-time. This project is optimized for headless deployment on Linux cloud servers (e.g., Oracle Cloud Ubuntu VMs).
 
-## ✨ Features
+##  Features
 
 - **Advanced Bot-Bypass Engine:** Utilizes `undetected-chromedriver` and headless Chrome to bypass Amazon's strict scraping detection.
 - **24/7 Cloud Ready:** Completely headless architecture optimized for low-resource Linux VMs without graphical interfaces.
@@ -11,7 +11,7 @@ A robust, 24/7 automated web scraper built with Python, specifically designed to
 - **Atomic File Saving:** Employs temporary file buffers when writing to CSV to prevent data corruption in the event of server reboots or crashes.
 - **Asynchronous Execution:** Discord notifications run on a separate daemon thread to ensure the main scraping loop never stalls.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Language:** Python 3.10+
 - **Browser Automation:** Selenium WebDriver, `undetected-chromedriver`
@@ -19,7 +19,7 @@ A robust, 24/7 automated web scraper built with Python, specifically designed to
 - **Network/API:** Requests
 - **Deployment OS:** Ubuntu Linux / Oracle Cloud
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -39,7 +39,7 @@ A robust, 24/7 automated web scraper built with Python, specifically designed to
    sudo apt install ./google-chrome-stable_current_amd64.deb
    ```
 
-## ⚙️ Usage
+##  Usage
 
 Configure your target keywords and Discord webhook in `Final_testing_cloud.py`:
 
@@ -56,8 +56,8 @@ python Final_testing_cloud.py
 
 *For persistent 24/7 deployment, we recommend running the script inside a `tmux` session.*
 
-## 📁 Output
+##  Output
 The script automatically categorizes items and saves data as `.csv` files locally while pushing live updates to Discord.
 
-## 🔒 Legal & Ethical Disclaimer
+##  Legal & Ethical Disclaimer
 This project is for educational purposes only. Automated data extraction from websites may violate their Terms of Service. Please respect `robots.txt` and do not overload servers.
