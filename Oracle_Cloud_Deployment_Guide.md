@@ -1,10 +1,10 @@
-# ☁️ Oracle Cloud Deployment Guide: 24/7 Python Scripts
+#  Oracle Cloud Deployment Guide: 24/7 Python Scripts
 
 *A complete, step-by-step guide to deploying a Python web scraper to an Oracle Cloud "Always Free" Linux Server.*
 
 ---
 
-## 🛠️ Phase 1: Set Up the Network (VCN)
+##  Phase 1: Set Up the Network (VCN)
 
 Before creating a server, you must create a network with internet access.
 
@@ -39,12 +39,12 @@ Before creating a server, you must create a network with internet access.
    - **Subnet Type:** `Regional`
    - **IPv4 CIDR Block:** `10.0.0.0/24`
    - **Route Table:** select the Default Route Table.
-   - **Subnet Access:** ⚠️ Select **Public Subnet**.
+   - **Subnet Access:**  Select **Public Subnet**.
    - Click **Create Subnet**.
 
 ---
 
-## 🖥️ Phase 2: Create the Server (Instance)
+##  Phase 2: Create the Server (Instance)
 
 Now, create the actual Linux computer.
 
@@ -68,7 +68,7 @@ Now, create the actual Linux computer.
 
    - In the "Add SSH keys" section, select **Generate a key pair for me**.
    - Click **Download private key**.
-   - ⚠️ Save this `.key` file directly to your **Desktop**. You cannot download it later!
+   -  Save this `.key` file directly to your **Desktop**. You cannot download it later!
 5. **Create**
 
    - Click the **Create** button at the bottom.
@@ -76,7 +76,7 @@ Now, create the actual Linux computer.
 
 ---
 
-## 🔌 Phase 3: Connect to Your Server
+##  Phase 3: Connect to Your Server
 
 Use Windows PowerShell to log into your cloud server.
 
@@ -97,7 +97,7 @@ Use Windows PowerShell to log into your cloud server.
 
 ---
 
-## ⚙️ Phase 4: Prepare the Server
+##  Phase 4: Prepare the Server
 
 Install Google Chrome and Python libraries on the blank server.
 
@@ -134,7 +134,7 @@ Run these commands **one by one** in your SSH terminal:
 
 ---
 
-## 📤 Phase 5: Upload Your Python Script
+##  Phase 5: Upload Your Python Script
 
 Move the script from your Windows PC to the Cloud Server.
 
@@ -147,7 +147,7 @@ Move the script from your Windows PC to the Cloud Server.
 
 ---
 
-## ♾️ Phase 6: Run the Script 24/7 (The Magic Step)
+##  Phase 6: Run the Script 24/7 (The Magic Step)
 
 We use `tmux` to create a virtual window that stays alive even when your PC is turned off.
 
@@ -170,7 +170,7 @@ We use `tmux` to create a virtual window that stays alive even when your PC is t
 
 ---
 
-## 🔍 How to Check on Your Script Later
+##  How to Check on Your Script Later
 
 To see the live output of your script tomorrow or next week:
 
@@ -183,4 +183,4 @@ To see the live output of your script tomorrow or next week:
    tmux attach -t scraper
    ```
 3. When you are done looking, **always Detach** safely (`Ctrl + B`, then `D`).
-   - ⚠️ *Never press `Ctrl + C` unless you want to permanently stop the script.*
+   -  *Never press `Ctrl + C` unless you want to permanently stop the script.*
