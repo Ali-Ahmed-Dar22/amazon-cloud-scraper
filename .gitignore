@@ -1,0 +1,11 @@
+# Data files
+*.csv
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment Variables
+.env
